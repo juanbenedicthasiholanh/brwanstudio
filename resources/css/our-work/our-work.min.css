@@ -1,0 +1,35 @@
+
+.logo-scroll {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.logo-track {
+    display: flex;
+    gap: 60px;
+    animation: scrollLogos 20s linear infinite;
+    width: max-content;
+}
+
+.logo-track img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: .3s;
+}
+
+.logo-track img:hover {
+    filter: grayscale(0%);
+}
+
+@keyframes scrollLogos {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
